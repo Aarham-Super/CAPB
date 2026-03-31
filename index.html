@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Test Captcha</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+
+  .captcha-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .captcha-container {
+    width: 300px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cloudflare-container {
+    width: 300px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="captcha-row">
+
+  <!-- Cloudflare captcha box -->
+  <div class="cloudflare-container">
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAACnzHxpBBymvBObn"></div>
+  </div>
+
+  <!-- Your original Google captcha (unchanged) -->
+  <div class="captcha-container" id="captcha-container">
+    <div class="g-recaptcha" data-sitekey="6LeLPoMsAAAAAP7JzxCKCciMlmGELYlnY3Ufhfij"></div>
+  </div>
+
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+</body>
+</html>
