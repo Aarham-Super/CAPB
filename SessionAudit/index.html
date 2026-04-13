@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SessionAudit · CAPB Documentation</title>
+
+  <meta name="description" content="SessionAudit explains the CAPB system architecture, security flow, and verification logic in detail.">
+
+  <link rel="stylesheet" href="/functions/styles.css">
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <header class="hero">
+      <p class="hero__eyebrow">CAPB SYSTEM AUDIT</p>
+      <h1>SessionAudit</h1>
+      <p class="hero__subhead">
+        SessionAudit provides full transparency into CAPB’s architecture, security flow, and verification logic.
+      </p>
+    </header>
+
+    <section class="portfolio__card">
+      <h2>Purpose</h2>
+      <p>
+        SessionAudit exists to document how CAPB processes authentication data and verification signals.
+      </p>
+    </section>
+
+    <section class="portfolio__card">
+      <h2>System Flow</h2>
+      <ul>
+        <li>User interacts with HoverShield</li>
+        <li>Tokens are generated (Turnstile + reCAPTCHA)</li>
+        <li>EdgeGuard validates both tokens</li>
+        <li>Final result is returned</li>
+      </ul>
+    </section>
+
+    <section class="portfolio__card">
+      <h2>Privacy Model</h2>
+      <p>
+        CAPB does not store user data. All verification requests are processed in real time and discarded immediately.
+      </p>
+    </section>
+
+  </div>
+
+</body>
+</html>
