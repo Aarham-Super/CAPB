@@ -19,20 +19,22 @@ jobs:
               repo: context.repo.repo,
               body: `Hello! I am captcha-both bot. 
 
-              In the meantime, if you are applying for a recommendation, please make sure you didn't do your recommendation in your own name or your recommendations will not be approved. Make sure it's the same as the original one, but it has your recommendations. If not, then your recommendation will be cancelled and you will have to make another PR.
+              ### ⚖️ Legal & Privacy
+              By making this PR, you agree to our **Terms of Use** and **Privacy Policy**. Please stay professional.
 
-              **If you are applying to be a member:**
-              Please make sure you have the requirements. 
+              ### 💡 Recommendations
+              - Do NOT submit in your own name; keep it as the original.
+              - If the name is changed, your PR will be **cancelled**.
 
-              **Requirements:**
-              - You need to have an Email OR a Phone Number. 
-              - If you don't have an email or phone number, your application will be rejected. 
-              - You don't need both, but you at least need one.
+              ### 🎖️ Applying for Membership
+              If you want to join the team, you must follow these naming rules:
+              
+              1. **The File Name:** You must create a new file and name it \`FIRSTNAME_MEMBERSHIP_FORM.md\`.
+              2. **First Name Only:** Replace "FIRSTNAME" with your **first name only**. Do NOT include your middle or last name.
+              3. **Requirements:** You MUST provide an Email or Phone Number inside the file.
+              4. **PIN IT:** You must attach/pin your completed form to this PR. 
+              
+              **⚠️ WARNING:** If you use your full name in the filename, or if I cannot see your pinned attachment, this PR will be **closed**.
 
-              **To Submit:**
-              1. You must be nice, professional, and unique.
-              2. Submit an online paper saying your Name, Email or Phone (choose one), What you can do, and Why you want to become a member.
-              3. **IMPORTANT:** You have to PIN that attachment to the PR. If I cannot see the attachment, your PR will be closed.
-
-              *Please wait a while. It might take a couple of days, weeks, or even a month because our team is really small. We don't have that many members yet.* **Note:** Being a member is free!`
+              *Please wait—our team is small! It may take days or weeks.*`
             })
