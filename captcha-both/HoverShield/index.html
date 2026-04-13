@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HoverShield · CAPB Frontend</title>
+
+  <meta name="description" content="HoverShield is the CAPB frontend system that handles CAPTCHA rendering and token collection from multiple providers.">
+
+  <link rel="stylesheet" href="/functions/styles.css">
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <header class="hero">
+      <p class="hero__eyebrow">CAPB FRONTEND LAYER</p>
+      <h1>HoverShield</h1>
+      <p class="hero__subhead">
+        HoverShield is the user interaction layer of CAPB, responsible for rendering CAPTCHA systems and collecting verification tokens.
+      </p>
+    </header>
+
+    <section class="portfolio__card">
+      <h2>What It Does</h2>
+      <p>
+        HoverShield integrates Cloudflare Turnstile and Google reCAPTCHA v3 into a single interface.
+      </p>
+    </section>
+
+    <section class="portfolio__card">
+      <h2>Interaction Flow</h2>
+      <ul>
+        <li>User loads page</li>
+        <li>Turnstile widget is rendered</li>
+        <li>reCAPTCHA v3 runs silently</li>
+        <li>Tokens are stored temporarily</li>
+        <li>Data is sent to EdgeGuard</li>
+      </ul>
+    </section>
+
+    <section class="portfolio__card">
+      <h2>Design Goal</h2>
+      <p>
+        HoverShield is designed to be invisible, fast, and frictionless while still producing strong security signals.
+      </p>
+    </section>
+
+  </div>
+
+</body>
+</html>

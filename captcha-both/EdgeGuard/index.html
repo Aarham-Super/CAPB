@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EdgeGuard · CAPB Security Engine</title>
+
+  <meta name="description" content="EdgeGuard is the CAPB backend verification engine running on Cloudflare Workers, processing CAPTCHA tokens and returning unified security decisions.">
+
+  <link rel="stylesheet" href="/functions/styles.css">
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <header class="hero">
+      <p class="hero__eyebrow">CAPB EDGE SECURITY</p>
+      <h1>EdgeGuard</h1>
+      <p class="hero__subhead">
+        EdgeGuard is the backend decision engine of CAPB, responsible for verifying CAPTCHA tokens and producing a unified trust result.
+      </p>
+    </header>
+
+    <section class="portfolio__card">
+      <h2>Core Function</h2>
+      <p>
+        EdgeGuard processes incoming verification requests from the CAPB frontend system.
+        It validates both Cloudflare Turnstile and Google reCAPTCHA v3 responses.
+      </p>
+    </section>
+
+    <section class="portfolio__card">
+      <h2>Processing Pipeline</h2>
+      <ul>
+        <li>Receive POST request from HoverShield</li>
+        <li>Validate Turnstile token</li>
+        <li>Validate reCAPTCHA score</li>
+        <li>Combine results into trust decision</li>
+        <li>Return structured JSON response</li>
+      </ul>
+    </section>
+
+    <section class="portfolio__card">
+      <h2>Security Model</h2>
+      <p>
+        EdgeGuard does not store any user data. All verification is stateless and processed at the edge using Cloudflare Workers.
+      </p>
+    </section>
+
+  </div>
+
+</body>
+</html>
