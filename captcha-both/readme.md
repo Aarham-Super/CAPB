@@ -1,66 +1,75 @@
 # CAPB - Captcha Integration (v3)
 
-Welcome to the **CAPB** Captcha implementation! This project is designed to provide a clean, community-driven template for integrating **Google reCAPTCHA v3** and **Cloudflare Turnstile**. 
+**Description:** This is captcha-both maintainers. We are currently **gathering all the ingredients** to make this project work perfectly. Please be patient with us—it might take a couple of days, a couple of weeks, or maybe even a month to get everything ready. We don't have that many members yet, but we are working hard to cook up something great!
 
-This repository is fully open-source—anyone is encouraged to fork it, improve it, and deploy it for their own use.
+This repository provides a community-driven template for integrating **Google reCAPTCHA v3** and **Cloudflare Turnstile**. 
 
 ---
 
 ## 🚀 Features
 
 * **Dual Integration:** Supports both Google reCAPTCHA v3 and Cloudflare Turnstile.
-* **Lightweight:** Minimalistic code for fast loading and easy debugging.
-* **Community Ready:** Easy to fork and modify for your specific needs.
+* **Flexible Hosting:** Host this on **GitHub Pages, Vercel, Netlify, or any other hosting provider**.
+* **Fork & Remix:** Feel free to do **anything** with the code once you fork it—it is yours to play with!
 
 ---
 
 ## 🛠️ Setup Instructions
 
-To get this project running on your own site, you must replace the placeholder keys with your actual API credentials.
+To get this project running, replace the placeholder keys with your actual API credentials.
 
 ### 1. Fork this Repository
-Click the **Fork** button at the top right to create your own copy of this project.
+Click the **Fork** button at the top right to create your own copy.
 
 ### 2. Get Your API Keys
-You will need to register your domain with the following services:
 * **Google reCAPTCHA v3:** [Get Keys Here](https://www.google.com/recaptcha/admin)
 * **Cloudflare Turnstile:** [Get Keys Here](https://dash.cloudflare.com/)
 
-### 3. Replace Placeholders
-Open the files within the `captcha-both` directory and search for the placeholder strings. Replace them as follows:
+---
 
-| Service | Placeholder to Replace | Where to find it |
-| :--- | :--- | :--- |
-| **reCAPTCHA v3** | `YOUR_RECAPTCHA_SITE_KEY` | Admin Console (v3 Site Key) |
-| **Cloudflare** | `YOUR_TURNSTILE_SITE_KEY` | Cloudflare Dashboard |
+## 👤 Customization & Development
 
-> **Note:** Ensure you are using **v3** keys for reCAPTCHA, as this project is optimized for the invisible verification flow.
+**Important:** Change **"Made by Aarham"** to your real name in the source files.
+
+You are welcome to edit or create new files/folders:
+* `index.html` — UI/Front-end.
+* `worker.js` — Backend/Cloudflare Workers.
+* `legal.html` — Your legal disclosures.
 
 ---
 
-## 📂 Directory Structure
+## 👥 Membership & Recommendations
 
-* `captcha-both/`: Contains the main logic for the dual-captcha setup.
-* `index.html`: The front-end implementation and placeholder location.
-* `README.md`: Project documentation.
+**Hello! I am captcha-both.** If you are interacting with this repository, please read the following rules carefully:
+
+### 💡 Recommendations
+* **No Name Changes:** Please make sure you do **not** submit a recommendation in your own name; keep it under the project name or it will not be approved.
+* **Originality:** Your work should match the original structure but include your specific improvements.
+* **Rejection:** If these rules are not followed, your recommendation will be **cancelled**, and you will have to open a new PR.
+
+### 🎖️ Applying for Membership
+To become a member of the **captcha-both maintainers**, you must meet these requirements:
+* **Contact:** You **must** provide at least one: an **Email** or a **Phone Number**. If you provide neither, your application will be rejected.
+* **Professionalism:** We value members who are nice, professional, and unique.
+* **How to Submit:** You must submit an online document stating:
+  1. Your Name.
+  2. Your Email or Phone (choose one).
+  3. What skills you bring to the team.
+  4. Why you want to join us.
+* **IMPORTANT:** You must **PIN the attachment** to your Pull Request. If I cannot see the attachment, the PR will be **closed automatically**.
+
+*Note: Membership is free! Since our team is small, please expect a wait time of a few days to a month for a response.*
 
 ---
 
-## 🤝 Contributing
+## ⚖️ Legal & Privacy
 
-This project thrives on community support! 
-1. **Fork** the repo.
-2. **Create** a new branch for your feature.
-3. **Commit** your changes.
-4. **Push** and open a **Pull Request**.
-
-Feel free to add new captcha providers or improve the security of the existing implementation.
+Before deploying, read and agree to:
+* **Google reCAPTCHA:** [Terms](https://www.google.com/intl/en/policies/terms/) & [Privacy](https://www.google.com/intl/en/policies/privacy/)
+* **Cloudflare Turnstile:** [Terms](https://www.cloudflare.com/website-terms/) & [Privacy](https://www.cloudflare.com/privacypolicy/)
 
 ---
 
 ## 📜 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-**Disclaimer:** *This repository is for educational and development purposes. Please use responsibly and adhere to the Terms of Service of the respective captcha providers.*
+Distributed under the MIT License.
