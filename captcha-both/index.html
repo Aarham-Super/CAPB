@@ -5,42 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="TSkqSto0ngoAHLoH8UAS4XFuT3TSvKH3284dO1LXNNM" />
   <meta name="google-adsense-account" content="ca-pub-5995683832318241">
-
-  <!-- Meta description for Google -->
   <meta name="description" content="CAPTCHA Both — Combined CAPTCHA portfolio using Google reCAPTCHA & Cloudflare Turnstile.">
-
-  <!-- Ensure Google indexes the page -->
   <meta name="robots" content="index, follow">
 
-  <!-- Your site title -->
   <title>CAPTCHA Both</title>
 
-  <!-- Structured data to tell Google the site name & publisher -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "CAPTCHA Both",
-    "url": "https://capb.pages.dev",
+    "url": "https://pages.dev",
     "description": "CAPTCHA Both — Combined CAPTCHA portfolio using Google reCAPTCHA & Cloudflare Turnstile.",
     "publisher": {
       "@type": "Organization",
-      "name": "CAPTCHA Both",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://capb.pages.dev/path-to-your-logo.png"
-      }
+      "name": "CAPTCHA Both"
     }
   }
   </script>
 
   <link rel="stylesheet" href="functions/styles.css">
 
-  <!-- Google reCAPTCHA v3 -->
-  <script src="https://www.google.com/recaptcha/api.js?render=6LeRLJ8sAAAAAA6jkHFY29brzKRXYFgcIZKvDVpL"></script>
+  <!-- Google reCAPTCHA v3 - PLACEHOLDER -->
+  <script src="https://google.com"></script>
 
   <!-- Cloudflare Turnstile -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="https://cloudflare.com" async defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -49,100 +39,33 @@
         <p class="hero__eyebrow">AARHAM'S DEV WORK</p>
         <h1>CAPTCHA Both · Web Engineer Portfolio</h1>
         <p class="hero__subhead">
-          I design verification experiences and full-stack micro-interactions for Cloudflare Pages deployments. This project merges Google reCAPTCHA, Turnstile, and my backend worker to demonstrate deliberate control over security, UX, and deployment automation.
-        </p>
-        <p class="hero__body">
-          Skills: TypeScript/JavaScript · Serverless Workers · Front-end design · Cloudflare Pages · API orchestration.
+          I design verification experiences and full-stack micro-interactions for Cloudflare Pages deployments.
         </p>
       </div>
       <div class="hero__cta">
         <button id="refreshBtn" class="hero__button">Refresh Challenge</button>
         <button id="verifyBtn" class="primary-button">Verify Identity</button>
-        <a class="main-page-btn" href="index.html" aria-disabled="true" tabindex="-1">Main Page</a>
+        <a class="main-page-btn" href="index.html">Main Page</a>
       </div>
     </header>
-
-    <section class="portfolio">
-      <article class="portfolio__card">
-        <h2>Project Spotlight · HoverShield</h2>
-        <p>
-          Designed a dual CAPTCHA stack to prove mastery over asynchronous widget loading and token coordination. The worker posts tokens to Google and Cloudflare, then surfaces a graded verification badge.
-        </p>
-        <a class="portfolio__link" href="https://hovershield.capb.is-a.dev" target="_blank" rel="noreferrer noopener">hovershield.capb.is-a.dev</a>
-      </article>
-      <article class="portfolio__card">
-        <h2>Project Spotlight · Edge Guard</h2>
-        <p>
-          Crafted the worker response handler that evaluates both tokens, surfaces UI status, and feeds a simple analytics event to a secured log (no PII). Demonstrates structured error handling and user feedback.
-        </p>
-        <a class="portfolio__link" href="https://edgeguard.capb.is-a.dev" target="_blank" rel="noreferrer noopener">edgeguard.capb.is-a.dev</a>
-      </article>
-      <article class="portfolio__card">
-        <h2>Project Spotlight · Session Audit</h2>
-        <p>
-          Built a static marketing-and-support page for the CAPB service that also explains the security model. Governance-focused copy shows how I document third-party terms, privacy, and compliance in real deployments.
-        </p>
-        <a class="portfolio__link" href="https://sessionaudit.capb.is-a.dev" target="_blank" rel="noreferrer noopener">sessionaudit.capb.is-a.dev</a>
-      </article>
-    </section>
 
     <section class="card-grid">
       <article class="captcha-card card--turnstile">
         <div class="card__badge">Cloudflare Turnstile</div>
         <h2>Interactive Challenge</h2>
-        <p class="card__desc">
-          Refresh to generate a new Turnstile session and witness how the widget honors the dark theme that matches the portfolio.
-        </p>
         <div id="turnstile-target" class="turnstile-placeholder"></div>
-        <p class="card__status">
-          Token state: <span id="turnstile-status">Awaiting interaction</span>
-        </p>
+        <p class="card__status">Token state: <span id="turnstile-status">Awaiting interaction</span></p>
       </article>
 
       <article class="captcha-card card--recaptcha">
         <div class="card__badge">Google reCAPTCHA v3</div>
         <h2>Invisible Score</h2>
-        <p class="card__desc">
-          Executing reCAPTCHA v3 silently provides a score for comparison against Cloudflare’s verdict, which I log in the worker for debugging.
-        </p>
         <div class="recaptcha-pulse" aria-hidden="true"></div>
-        <p class="card__status">
-          Latest score: <span id="google-score">—</span>
-        </p>
+        <p class="card__status">Latest score: <span id="google-score">—</span></p>
       </article>
     </section>
 
     <div id="metaStatus" class="status-panel" data-state="neutral">Awaiting verification input.</div>
-
-    <section class="skills">
-      <h2>Core Competencies</h2>
-      <ul>
-        <li>JavaScript &amp; TypeScript (Node + vanilla)</li>
-        <li>Cloudflare Workers &amp; Pages deployments</li>
-        <li>API orchestration and token stitching</li>
-        <li>Accessible, responsive UI design</li>
-        <li>Documentation &amp; policy compliance</li>
-      </ul>
-    </section>
-
-    <section class="contact">
-      <p>
-        Looking for someone to harden your verification UX or to build secure serverless glue logic? Reach out through GitHub, LinkedIn, or raise a support request on Cloudflare Pages and mention CAPB Dev.
-      </p>
-    </section>
-
-    <section class="cookie-banner" id="cookieBanner">
-      <div class="cookie-content">
-        <p>
-          We use cookies to show relevant ads and improve your experience. You can choose your settings.
-        </p>
-        <div class="cookie-actions">
-          <button id="cookieAccept" class="ghost-button">Consent</button>
-          <button id="cookieDeny" class="ghost-button">Do not consent</button>
-          <a class="ghost-button" href="legal.html#privacy" target="_blank" rel="noreferrer noopener">Manage options</a>
-        </div>
-      </div>
-    </section>
 
     <footer class="footer">
       <span>Made By Aarham</span>
@@ -153,18 +76,13 @@
     </footer>
   </div>
 
-  <script type="text/javascript">
-    var infolinks_pid = 3444647;
-    var infolinks_wsid = 0;
-  </script>
-  <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
   <script>
     const refreshBtn = document.getElementById('refreshBtn');
     const verifyBtn = document.getElementById('verifyBtn');
     const statusPanel = document.getElementById('metaStatus');
     const turnstileStatus = document.getElementById('turnstile-status');
     const googleScore = document.getElementById('google-score');
-    let turnstileToken = '';
+    
     let turnstileWidgetId = null;
 
     function statusUpdate(message, state = 'neutral') {
@@ -172,112 +90,53 @@
       statusPanel.dataset.state = state;
     }
 
+    // Handle Turnstile Success
     window.handleTurnstileSuccess = token => {
-      turnstileToken = token;
       turnstileStatus.textContent = 'Captured';
       statusUpdate('Turnstile challenge solved.', 'success');
     };
 
+    // Initialize Turnstile with PLACEHOLDER
     function initTurnstile() {
-      if (!window.turnstile) {
-        setTimeout(initTurnstile, 200);
-        return;
+      if (window.turnstile) {
+        turnstileWidgetId = window.turnstile.render('#turnstile-target', {
+          sitekey: 'YOUR_TURNSTILE_KEY',
+          callback: 'handleTurnstileSuccess',
+          theme: 'dark'
+        });
       }
+    }
 
-      turnstileWidgetId = window.turnstile.render('#turnstile-target', {
-        sitekey: '0x4AAAAAACyY1984PF9y__1x',
-        callback: 'handleTurnstileSuccess',
-        'error-callback': () => {
-          turnstileStatus.textContent = 'Error';
-          statusUpdate('Turnstile widget failed to load.', 'error');
-        },
-        theme: 'dark'
+    // Google reCAPTCHA Execution
+    function runRecaptcha() {
+      grecaptcha.ready(function() {
+        grecaptcha.execute('YOUR_RECAPTCHA_KEY', {action: 'submit'}).then(function(token) {
+          googleScore.textContent = "Token Generated";
+          console.log("reCAPTCHA Token:", token);
+        });
       });
     }
 
-    function resetChallenges() {
-      if (typeof window.turnstile !== 'undefined' && turnstileWidgetId !== null) {
-        window.turnstile.reset(turnstileWidgetId);
-      }
-      turnstileToken = '';
-      turnstileStatus.textContent = 'Refreshing';
-      googleScore.textContent = '—';
-      statusUpdate('Challenges refreshed.', 'info');
-    }
-
+    // Refresh Button Logic
     refreshBtn.addEventListener('click', () => {
-      resetChallenges();
+      if (turnstileWidgetId !== null) {
+        window.turnstile.reset(turnstileWidgetId);
+        turnstileStatus.textContent = 'Awaiting interaction';
+      }
+      runRecaptcha();
+      statusUpdate('Challenges refreshed.', 'neutral');
     });
 
+    // Verify Button Logic
     verifyBtn.addEventListener('click', () => {
-      if (!turnstileToken) {
-        statusUpdate('Complete the Turnstile challenge before verifying.', 'warn');
-        return;
-      }
-
-      statusUpdate('Gathering Google reCAPTCHA score...', 'info');
-      grecaptcha.ready(async () => {
-        try {
-          const googleToken = await grecaptcha.execute('6LeRLJ8sAAAAAA6jkHFY29brzKRXYFgcIZKvDVpL', { action: 'submit' });
-          const response = await fetch('/verify', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ googleToken, turnstileToken })
-          });
-
-          const data = await response.json();
-          googleScore.textContent = data.google.score?.toFixed(2) ?? '—';
-
-          const googlePass = data.google.success && data.google.score >= 0.5;
-          const turnstilePass = data.turnstile.success;
-
-          if (googlePass && turnstilePass) {
-            statusUpdate('Verified on both layers — human confirmed.', 'success');
-          } else if (!turnstilePass) {
-            statusUpdate('Turnstile validation failed. Refresh and retry.', 'error');
-          } else {
-            statusUpdate('reCAPTCHA score too low. Interaction looks automated.', 'warn');
-          }
-        } catch (err) {
-          console.error('Verification error', err);
-          statusUpdate('Verification service unreachable.', 'error');
-        }
-      });
+      statusUpdate('Verifying tokens...', 'neutral');
+      // Logic for backend verification goes here
     });
 
-    initTurnstile();
-
-    const cookieBanner = document.getElementById('cookieBanner');
-    const cookieAccept = document.getElementById('cookieAccept');
-    const cookieDeny = document.getElementById('cookieDeny');
-    const COOKIE_KEY = 'capb_cookie_accept';
-
-    function hideCookieBanner() {
-      if (cookieBanner) {
-        cookieBanner.classList.add('hidden');
-      }
-    }
-
-    if (cookieBanner) {
-      const stored = localStorage.getItem(COOKIE_KEY);
-      if (stored === 'accepted' || stored === 'denied') {
-        hideCookieBanner();
-      }
-    }
-
-    if (cookieAccept) {
-      cookieAccept.addEventListener('click', () => {
-        localStorage.setItem(COOKIE_KEY, 'accepted');
-        hideCookieBanner();
-      });
-    }
-
-    if (cookieDeny) {
-      cookieDeny.addEventListener('click', () => {
-        localStorage.setItem(COOKIE_KEY, 'denied');
-        hideCookieBanner();
-      });
-    }
+    window.onload = () => {
+        initTurnstile();
+        runRecaptcha();
+    };
   </script>
 </body>
 </html>
