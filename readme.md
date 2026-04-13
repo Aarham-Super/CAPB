@@ -2,7 +2,12 @@
 
 **Description:** This is captcha-both maintainers. We are currently **gathering all the ingredients** to make this project work perfectly. Please be patient with us—it might take a couple of days, a couple of weeks, or maybe even a month to get everything ready. We don't have that many members yet, but we are working hard to cook up something great!
 
-This repository provides a community-driven template for integrating **Google reCAPTCHA v3** and **Cloudflare Turnstile**. 
+---
+
+## 🛑 IMPORTANT: READ LEGAL.MD
+Before interacting with this repository, opening a Pull Request, or applying for membership, you **must** read the [LEGAL.md](./LEGAL.md) file. 
+* **Public Data:** Any information you provide in a PR (Email, Phone, Name) will be **PUBLIC** for everyone to see.
+* **Agreement:** By submitting code or forms, you agree to our Terms of Use and Privacy Policy.
 
 ---
 
@@ -40,33 +45,19 @@ You are welcome to edit or create new files/folders:
 
 ## 👥 Membership & Recommendations
 
-**Hello! I am captcha-both.** If you are interacting with this repository, please read the following rules carefully:
+**Hello! I am captcha-both bot.** If you are interacting with this repository, please read the following rules:
 
 ### 💡 Recommendations
-* **No Name Changes:** Please make sure you do **not** submit a recommendation in your own name; keep it under the project name or it will not be approved.
-* **Originality:** Your work should match the original structure but include your specific improvements.
-* **Rejection:** If these rules are not followed, your recommendation will be **cancelled**, and you will have to open a new PR.
+* **No Name Changes:** Do **not** submit a recommendation in your own name; keep it under the project name or it will not be approved.
+* **Rejection:** If the rules are not followed, your recommendation will be **cancelled**.
 
 ### 🎖️ Applying for Membership
-To become a member of the **captcha-both maintainers**, you must meet these requirements:
-* **Contact:** You **must** provide at least one: an **Email** or a **Phone Number**. If you provide neither, your application will be rejected.
-* **Professionalism:** We value members who are nice, professional, and unique.
-* **How to Submit:** You must submit an online document stating:
-  1. Your Name.
-  2. Your Email or Phone (choose one).
-  3. What skills you bring to the team.
-  4. Why you want to join us.
-* **IMPORTANT:** You must **PIN the attachment** to your Pull Request. If I cannot see the attachment, the PR will be **closed automatically**.
+To join the **captcha-both maintainers**, you must:
+1. **The Form:** Fill out the `MEMBERSHIP_FORM.md` and name your new file `FIRSTNAME_MEMBERSHIP_FORM.md` (First name only!).
+2. **Contact:** Provide at least one: an **Email** or a **Phone Number**.
+3. **PIN IT:** You must **PIN the attachment** to your Pull Request. If it is not pinned, the PR will be **closed**.
 
-*Note: Membership is free! Since our team is small, please expect a wait time of a few days to a month for a response.*
-
----
-
-## ⚖️ Legal & Privacy
-
-Before deploying, read and agree to:
-* **Google reCAPTCHA:** [Terms](https://www.google.com/intl/en/policies/terms/) & [Privacy](https://www.google.com/intl/en/policies/privacy/)
-* **Cloudflare Turnstile:** [Terms](https://www.cloudflare.com/website-terms/) & [Privacy](https://www.cloudflare.com/privacypolicy/)
+*Note: Membership is free! Expect a wait time of a few days to a month for a response.*
 
 ---
 
