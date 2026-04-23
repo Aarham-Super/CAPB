@@ -1,5 +1,12 @@
 # CAPB - Captcha Integration (v3)
 
+## 🚀 WE ARE LAUNCHING ON PRODUCT HUNT!
+We are officially launching **CAPB** on Product Hunt! Support an open-source project by clicking the "Notify Me" button below to get an alert when we go live.
+
+[<img src="https://producthunt.com" alt="CAPTCHA Both - CAPB: The power of reCAPTCHA & Turnstile in one bot | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />](https://producthunt.com)
+
+---
+
 **Description:** This is captcha-both maintainers. We are currently **gathering all the ingredients** to make this project work perfectly. Please be patient with us—it might take a couple of days, a couple of weeks, or maybe even a month to get everything ready. We don't have that many members yet, but we are working hard to cook up something great!
 
 ---
@@ -14,7 +21,7 @@ Before interacting with this repository, opening a Pull Request, or applying for
 ## 🚀 Features
 
 * **Dual Integration:** Supports both Google reCAPTCHA v3 and Cloudflare Turnstile.
-* **Flexible Hosting:** Host this on **GitHub Pages, Vercel, Netlify, or any other hosting provider**.
+* **Flexible Hosting:** Optimized for **Cloudflare Pages**, but works on Vercel, Netlify, or any provider.
 * **Fork & Remix:** Feel free to do **anything** with the code once you fork it—it is yours to play with!
 
 ---
@@ -27,8 +34,8 @@ To get this project running, replace the placeholder keys with your actual API c
 Click the **Fork** button at the top right to create your own copy.
 
 ### 2. Get Your API Keys
-* **Google reCAPTCHA v3:** [Get Keys Here](https://www.google.com/recaptcha/admin)
-* **Cloudflare Turnstile:** [Get Keys Here](https://dash.cloudflare.com/)
+* **Google reCAPTCHA v3:** [Get Keys Here](https://google.com)
+* **Cloudflare Turnstile:** [Get Keys Here](https://cloudflare.com)
 
 ---
 
